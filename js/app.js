@@ -8,6 +8,9 @@ var msecsHeading = document.getElementById("msecs");
 var sno = document.getElementById("s.no");
 var minute = document.getElementById("minute");
 var second = document.getElementById("second");
+var diffmin = mins;
+var diffsec = secs;
+var diffmsec = msecs;
 var milisecond = document.getElementById("milisecond");
 var diffminute = document.getElementById("diffminute");
 var diffsecond = document.getElementById("diffsecond");
@@ -77,18 +80,14 @@ function reset(){
   document.getElementById("diffmilisecond").innerText = "";
   count = 0;
 }
-
 var count = 0;
 function lap(){
   count++;
-  var lastminute = mins;
-  var lastsecond = secs;
-  var lastmilisecond = msecs;
   document.getElementById("s.no").innerText += count +"\n";
   document.getElementById("minute").innerText += mins +" :\n";
   document.getElementById("second").innerText += secs +" :\n";
   document.getElementById("milisecond").innerText += msecs +"\n";
-  document.getElementById("diffminute").innerText += lastminute +" :\n";
-  document.getElementById("diffsecond").innerText += lastsecond +" :\n";
-  document.getElementById("diffmilisecond").innerText += lastmilisecond +"\n";
+  document.getElementById("diffminute").innerText += diffmin +" :\n";
+  document.getElementById("diffsecond").innerText += diffsec +" :\n";
+  document.getElementById("diffmilisecond").innerText += diffmsec +"\n";
 } 

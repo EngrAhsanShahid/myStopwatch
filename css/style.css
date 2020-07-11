@@ -56,7 +56,7 @@ body{
     }
     .lap{
         margin-left: 9%;
-        border: 3px solid white;
+        /* border: 3px solid white; */
         width:455px;
         height: 300px;
         text-align: center;
