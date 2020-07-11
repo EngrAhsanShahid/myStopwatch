@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Stop watch</title>
+</head>
+<body >
+    <div class="center">
+        <div class="heading"> 
+            <h1>Stopwatch</h1>
+        </div>
+        <div>
+            <h1 id="minutes" class="timer">0 :</h1>
+            <h1 id="secs" class="timer">0 :</h1>
+            <h1 id="msecs" class="timer">0 </h1>
+        </div>
+    </div>
+    <div class="lap">
+        <table class="lap_table">
+            <tr>
+                <td id="s.no"></td>
+                <td id="time"></td>
+                <td id="diff"></td>
+            </tr>
+        </table>
+    </div>
+    <div class="button-section">
+        <button id="start" class="button" onclick="start();">Start</button>
+        <button id="stop" onclick="stop();" hidden>Stop</button>
+        <button id="lap" class="button" onclick="lap();" disabled>Lap</button>
+        <button id="reset" onclick="reset();" hidden>Reset</button>
+    </div>
+</body>
+<script src="js/app.js"></script>
+</html>
