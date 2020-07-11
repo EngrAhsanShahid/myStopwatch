@@ -22,7 +22,7 @@ body{
 }
 .lap{
     margin:2% auto;
-    border: 3px solid white;
+    /* border: 3px solid white; */
     width:450px;
     height: 120px;
     text-align: center;
